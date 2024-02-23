@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 // Função assíncrona que estabelece a conexão com o banco de dados MongoDB
 export async function conexao() {
     const mongoUrl = 
-     "mongodb+srv://yasmimca967:senai115@cluster0.xvfjhas.mongodb.net/?retryWrites=true&w=majority";
+     "mongodb+srv://nexttask:nexttask123@nexttask.m3ndqve.mongodb.net/?retryWrites=true&w=majority";
     try {
         // conexão com o banco
         await mongoose.connect(mongoUrl);
