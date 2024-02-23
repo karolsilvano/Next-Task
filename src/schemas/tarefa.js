@@ -20,9 +20,9 @@ const tarefaSchema = new Schema({
         default: Date.now   // vai pegar automaticamente a data em que a tarefa foi criada
     },
     status:{
-        type: Boolean,      // Tipo de dado booleano para representar o status
+        type: number,      // Tipo de dado para representar o status
         required: false,    // campo opcional
-        default: false,     // Padrão é false, você pode ajustar conforme necessário
+        default: 0,     // Padrão é 0
     },
     prioridade:{
         type: String,       // tipo de dado que vai ser armazenado no banco (String)
