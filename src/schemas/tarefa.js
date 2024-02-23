@@ -20,7 +20,7 @@ const tarefaSchema = new Schema({
         default: Date.now   // vai pegar automaticamente a data em que a tarefa foi criada
     },
     status:{
-        type: number,      // Tipo de dado para representar o status
+        type: Number,      // Tipo de dado para representar o status
         required: false,    // campo opcional
         default: 0,     // Padrão é 0
     },
