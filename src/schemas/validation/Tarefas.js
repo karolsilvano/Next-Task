@@ -8,7 +8,7 @@ export const Tarefas = Joi.object({
     // define a validação para o campo 'descricao': string (opcional) e com no mínimo 3 caracteres
     descricao: Joi.string().min(3),
     // define a validação para o campo 'data': string que segue o formato "dd-mm-yyyy" (opcional)
-    data: Joi.string().regex(/^\d{2}-\d{2}-\d{4}$/),
+    data: Joi.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     // define a validação para o campo 'status': número que deve ser 0 ou 1 (opcional)
     status: Joi.number().valid(0, 1),
     // define a validação para o campo 'prioridade': string que começa com letra maiúscula e pode ser "Alta", "Média" ou "Baixa" (opcional)
