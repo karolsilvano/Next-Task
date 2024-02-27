@@ -3,8 +3,8 @@ import Joi from "joi";
 
 // define o esquema de validação para as tarefas
 export const Tarefas = Joi.object({
-    // define a validação para o campo 'titulo': string, obrigatório e com no mínimo 3 caracteres
-    titulo: Joi.string().required().min(3),
+    // define a validação para o campo 'titulo': string e com no mínimo 3 caracteres
+    titulo: Joi.string().min(3),
     // define a validação para o campo 'descricao': string (opcional) e com no mínimo 3 caracteres
     descricao: Joi.string().min(3),
     // define a validação para o campo 'data': string que segue o formato "dd-mm-yyyy" (opcional)
